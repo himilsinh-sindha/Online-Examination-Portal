@@ -1,0 +1,32 @@
+CREATE TABLE question (
+    id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    opt1 VARCHAR(255) NOT NULL,
+    opt2 VARCHAR(255) NOT NULL,
+    opt3 VARCHAR(255) NOT NULL,
+    opt4 VARCHAR(255) NOT NULL,
+    answer VARCHAR(255) NOT NULL,
+	  ch int NOT NULL,
+	  op int NOT NULL
+);
+
+CREATE TABLE student (
+    PRN BIGINT PRIMARY KEY,
+    rollNo INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+	  marks INT NOT NULL,
+    fatherName VARCHAR(255) NOT NULL,
+    motherName VARCHAR(255) NOT NULL,
+    gender VARCHAR(50) NOT NULL,
+    contactNo VARCHAR(20) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    address VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE examinfo (
+    id INT PRIMARY KEY,
+    limitsec INT NOT NULL,
+    limitmin INT NOT NULL,
+    limithr INT NOT NULL,
+    um INT NOT NULL
+);
